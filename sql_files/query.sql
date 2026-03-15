@@ -1,6 +1,6 @@
-SELECT * 
-FROM bronze.raw_player_game_logs 
-WHERE player_name LIKE 'Victor%'
-    AND season_year = '2025-26'
-ORDER BY pts DESC
-LIMIT 10;
+SELECT *
+FROM silver.team_game_stats
+WHERE
+    fg_pct = 'NaN'::numeric
+    OR fg3_pct = 'NaN'::numeric
+    OR ft_pct = 'NaN'::numeric;
