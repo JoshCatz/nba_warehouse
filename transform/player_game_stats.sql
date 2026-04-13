@@ -21,5 +21,6 @@ SELECT
     tov,
     plus_minus
 FROM bronze.raw_player_game_logs
+WHERE player_name LIKE '%Wembanyama%'
 ORDER BY game_date, game_id, team_name
-LIMIT 10;
+LIMIT 100;
